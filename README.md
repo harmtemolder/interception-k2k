@@ -17,7 +17,7 @@ This maps <kbd>caps lock</kbd> to <kbd>esc</kbd> when tapped and to <kbd>left co
 This contains three distinct setups:
 
 - Caps2esc, like before.
-- Home-row modifiers, mapping <kbd>a<\kbd>,<kbd>s<\kbd>,<kbd>d<\kbd>,<kbd>f<\kbd>,<kbd>j<\kbd>,<kbd>k<\kbd>,<kbd>l<\kbd>,<kbd>;<\kbd> and <kbd>space<\kbd> to <kbd>control</kbd>, <kbd>alt</kbd>, <kbd>meta</kbd> and <kbd>shift</kbd> when held.
+- Home-row modifiers, mapping <kbd>a</kbd>,<kbd>s</kbd>,<kbd>d</kbd>,<kbd>f</kbd>,<kbd>j</kbd>,<kbd>k</kbd>,<kbd>l</kbd>,<kbd>;</kbd> and <kbd>space</kbd> to <kbd>control</kbd>, <kbd>alt</kbd>, <kbd>meta</kbd> and <kbd>shift</kbd> when held.
 - Vim overlay, ...
 
 ### interception-pipe1
@@ -27,6 +27,10 @@ This contains these distinct setups:
 - <kbd>control</kbd> locks when both keys are pressed together. The same for <kbd>meta</kbd>.
 - Shift2caps, like below.
 - <kbd>left meta</kbd> key combinations as media keys
+
+### qwerty-ws
+
+This remaps the right half of an ANSI laptop keyboard after you have moved around some of its keycaps for a WideSym mod (inspired by [DreymaR's Colemak-CAWS](https://dreymar.colemak.org/ergo-mods.html#symbols)).
 
 ### shift2caps
 
