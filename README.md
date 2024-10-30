@@ -18,7 +18,7 @@ This contains three distinct setups:
 
 - Caps2esc, like before.
 - Home-row modifiers, mapping <kbd>a</kbd>,<kbd>s</kbd>,<kbd>d</kbd>,<kbd>f</kbd>,<kbd>j</kbd>,<kbd>k</kbd>,<kbd>l</kbd>,<kbd>;</kbd> and <kbd>space</kbd> to <kbd>control</kbd>, <kbd>alt</kbd>, <kbd>meta</kbd> and <kbd>shift</kbd> when held.
-- Vim overlay, ...
+- Vim overlay, in which holding <kbd>e</kbd> activates vim-like functions on the right side of the keyboard, and holding <kbd>i</kbd> activates some on the left. Note that this mapping seems to be incorrect, so it would need some work before these are actual vim keys. The correct ones look to be commented out.
 
 ### interception-pipe1
 
@@ -41,7 +41,7 @@ This toggles <kbd>caps lock</kbd> when both <kbd>shift</kbd> keys are pressed to
 If you wish to try out one or more of these example configurations, copy `udevmon.yaml` to `/etc/interception/`. Multiple configurations can be chained that yaml:
 
 ```yaml
-- JOB: "intercept -g $DEVNODE | /opt/interception/interception-pipe0 | /opt/interception/interception-pipe1 | uinput -d $DEVNODE"
+- JOB: "intercept -g $DEVNODE | caps2esc | shift2caps | uinput -d $DEVNODE"
   DEVICE:
     EVENTS:
       EV_KEY: [KEY_CAPSLOCK, KEY_ESC, KEY_SPACE]
@@ -53,7 +53,9 @@ If you wish to try out one or more of these example configurations, copy `udevmo
 git clone https://github.com/zsugabubus/interception-k2k &&
 cd interception-k2k &&
 make && # or make CONFIG_DIR=<your new dir>
-make install
+make install # or make install INSTALL_DIR=<somewhere else>
 ```
 
 By default `make` builds all configurations in the `examples` directory. Add `CONFIG_DIR=<your new dir>` if you created a new dir that only contains your configurations to prevent `make install` from installing any examples you might not plan on using.
+
+By default `make install` copies the executables to `/opt/interception`. Add `INSTALL_DIR=<somehwere else>` if you want to change that.
