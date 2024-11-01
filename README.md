@@ -9,7 +9,7 @@ User configuration files can be placed under subdirectories of `examples` direct
 - For simple 1-to-1 mappings, use `map-rules.h.in`.
   - If you want to disable a key, map it to `KEY_RESERVED`.
 - For many-to-1, use `multi-rules.h.in`.
-- Note that there does not seem to be a way to map a single key input to output multiple keys. Use dual-function-keys for that.
+- Note that there is no way to map a single key input to output multiple keys. Use [dual-function-keys](https://gitlab.com/interception/linux/plugins/dual-function-keys) for that.
 - For different behavior when a key is tapped and when it's held, use `tap-rules.h.in`.
 
 This repository contains the following example configurations:
@@ -44,7 +44,11 @@ This toggles <kbd>caps lock</kbd> when both <kbd>shift</kbd> keys are pressed to
 
 ### vim-overlay
 
-Holding <kbd>e</kbd> activates vim-like functions on the right side of the keyboard, and holding <kbd>i</kbd> activates some on the left. Note that this mapping seems to be incorrect, so it would need some work before these are actual vim keys. The correct ones look to be commented out.
+Holding <kbd>e</kbd> activates vim-like functions on the right side of the keyboard, and holding <kbd>i</kbd> activates some on the left.
+
+### vim-overlay-dvorak
+
+Like above, but remapped to match the location of keys on the Dvorak keyboard layout.
 
 ### udevmon.yaml
 
