@@ -1,0 +1,29 @@
+/* vi:set ft=c: */
+
+/* caps2esc */
+{ .base_key = KEY_CAPSLOCK,
+  .tap_key = KEY_ESC,
+  .hold_key = KEY_LEFTCTRL,
+  .repeat_key = KEY_LEFTCTRL,
+  .repeat_delay = 1,
+  .hold_immediately = 1,
+},
+
+/* enter2ctrl */
+{ .base_key = KEY_ENTER,
+  .tap_key = KEY_ENTER,
+  .hold_key = KEY_RIGHTCTRL,
+  .repeat_key = KEY_RIGHTCTRL,
+  .repeat_delay = 1,
+  .hold_immediately = 1,
+  .tap_typing = 1,
+},
+
+/* space2meta */
+{ .base_key = KEY_SPACE,
+  .tap_key = KEY_SPACE,
+  .hold_key = KEY_LEFTMETA,
+  .repeat_key = KEY_SPACE,
+  .repeat_delay = 1,
+  .tap_typing = 1,
+},
