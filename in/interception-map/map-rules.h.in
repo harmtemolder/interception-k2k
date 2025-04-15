@@ -2,7 +2,6 @@
 
 /* Assorted mapping */
 { .from_key = KEY_LEFTCTRL, .to_key = KEY_F13 /* = XF86Tools, layers in i3 */ },
-{ .from_key = KEY_LEFTMETA, .to_key = KEY_RIGHTMETA /* = Actual compose in XKB */ },
 { .from_key = KEY_RIGHTCTRL, .to_key = KEY_COMPOSE /* = Menu */ },
 
 /* Qwerty Wide Sym */
