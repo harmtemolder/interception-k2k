@@ -78,4 +78,5 @@ All together this may look like:
 make clean
 make CONFIG_DIR=in
 sudo make install CONFIG_DIR=in INSTALL_DIR=/usr/bin
+sudo systemctl restart udevmon
 ```

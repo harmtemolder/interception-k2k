@@ -5,7 +5,8 @@
 { .from_key = KEY_RIGHTCTRL, .to_key = KEY_COMPOSE /* = Menu */ },
 
 /* Qwerty Wide Sym */
-{ .from_key = KEY_7, .to_key = KEY_SEMICOLON },
+{ .from_key = KEY_6, .to_key = KEY_SEMICOLON },
+{ .from_key = KEY_7, .to_key = KEY_6 },
 { .from_key = KEY_8, .to_key = KEY_7 },
 { .from_key = KEY_9, .to_key = KEY_8 },
 { .from_key = KEY_0, .to_key = KEY_9 },
